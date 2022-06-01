@@ -84,7 +84,7 @@ export interface CharacterSearch {
     };
 }
 
-//non-result interfaces
+// non-result interfaces
 export interface CharacterData {
     mal_id: number;
     url: string;

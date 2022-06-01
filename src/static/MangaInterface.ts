@@ -195,7 +195,7 @@ export interface MangaSearch {
     pagination: Pagination;
 }
 
-//non-result interfaces
+// non-result interfaces
 export interface MangaData {
     mal_id: number;
     url: string;
@@ -290,7 +290,7 @@ export interface MangaSearchQuery {
     magazine?: string;
 }
 
-//Common used interfaces
+// Common used interfaces
 export interface Pagination {
     last_visible_page: number;
     has_next_page: boolean;

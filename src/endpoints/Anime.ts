@@ -17,7 +17,7 @@ export default class Anime {
        const urlString = `./anime/${mal_id}`;
        return await this.manager.do_GET_Request(urlString);
    }
-/**
+    /**
      * Get Character list of an anime
      * @param {number} mal_id MyAnimeList ID
      * @return {Promise<Array<AnimeCharacter>>}

@@ -85,7 +85,7 @@ export default class Characters {
     ${query.order_by ? "&order_by=" + query.order_by : ""}
     ${query.sort ? "&sort=" + query.sort : ""}
     ${query.letter ? "&letter=" + query.letter : ""}
-    `.replace(/\n/g, ""); //removing 'new lines'
+    `.replace(/\n/g, ""); // removing 'new lines'
         return await this.manager.do_GET_Request(urlString);
     }
 }

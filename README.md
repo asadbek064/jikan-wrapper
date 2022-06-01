@@ -20,7 +20,8 @@ npm install jikan-wrapper
 const jikan = require('jikan-wrapper');
 
 // usage example
-getAnimeById(5114)
+const mal = new jikan;
+mal.anime.getAnimeById(5114)
   .then(result => {
     console.log(result);
   });

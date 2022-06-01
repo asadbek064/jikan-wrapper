@@ -1,3 +1,4 @@
+
 import {
     MangaDataById,
     MangaCharacters,
@@ -64,8 +65,11 @@ export default class Characters {
         mal_id: number,
         filter?: MangaTopicFilter
     ): Promise<MangaTopics> {
-        let urlString = `/manga/${mal_id}/forum`;
-        if (filter) urlString + `?filter=${filter}`;
+        const urlString = `/manga/${mal_id}/forum`;
+        if (filter) {
+            urlString + `?filter=${filter}`;
+        }
+        
         return await this.manager.do_GET_Request(urlString);
     }
 
@@ -176,7 +180,7 @@ export default class Characters {
     ${query.sort ? "&sort=" + query.sort : ""}
     ${query.letter ? "&letter=" + query.letter : ""}
     ${query.magazine ? "&magazine=" + query.magazine : ""}
-    `.replace(/\n/g, ""); //Making sure there is no new lines
+    `.replace(/\n/g, ""); // Making sure there is no new lines
         return await this.manager.do_GET_Request(urlString);
     }
 

@@ -238,7 +238,7 @@ export interface AnimeDataById {
     data: Array<AnimeData>;
   }
   
-  //Non result interface
+  // Non result interface
   export interface AnimeEpisodesData {
     mal_id: number;
     url: string;
@@ -388,7 +388,7 @@ export interface AnimeDataById {
     }[];
   }
   
-  //Common Interface
+  // Common Interface
   interface Person {
     mal_id: number;
     url: string;
@@ -407,7 +407,7 @@ export interface AnimeDataById {
     };
   }
   
-  //Constants
+  // Constants
   export enum AnimeType {
     TV = "TV",
     OVA = "OVA",

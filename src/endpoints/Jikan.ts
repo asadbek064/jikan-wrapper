@@ -7,8 +7,8 @@ import Characters from "./Characters";
 export default class Jikan {
     private BASEURL: string;
     /**
-        @type {Anime} Anime class
-        @name Jikan anime
+     *  @type {Anime} Anime class
+     *  @name Jikan anime
      */
     public anime: Anime;
     
